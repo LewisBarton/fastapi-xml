@@ -220,6 +220,7 @@ class XmlRoute(APIRoute):
                 body=body,
                 dependency_overrides_provider=dependency_overrides_provider,
                 async_exit_stack=async_exit_stack,
+                embed_body_fields=True,
             )
 
         values, errors, background_tasks, sub_response, _ = solved_result
